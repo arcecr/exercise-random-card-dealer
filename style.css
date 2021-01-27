@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: rgb(0, 167, 77);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+
+.card {
+	background: white;
+  	position: relative;
+  	width: 150px;
+  	height: 220px;
+  	border-radius: 8px;
+	box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+
+.card p {
+	font-family: 'Open Sans', sans-serif;
+  	font-size: 100px;
+  	line-height: 215px;
+  	text-align: center;
+  	color: inherit;
+}
+
+.fas:first-child {
+	position: absolute;
+  	font-size: 35px;
+  	left: 5px;
+  	top: 5px;
+}
+
+ 
+.fas:last-child {
+	position: absolute;
+	font-size: 35px;
+	right: 5px;
+	bottom: 5px;
+	transform: rotate(180deg);
+}
+
+div[class*="heart"], div[class*="diamond"] { color: red; }
+div[class*="club"], div[class*="spade"] { color: black }
